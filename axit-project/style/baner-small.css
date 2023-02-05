@@ -1,0 +1,56 @@
+.baner-small {
+   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../img/banner2/banner2.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.baner-small__wrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   text-align: center;
+   padding: 50px 0;
+}
+
+.baner-small__title {
+   padding: 54px 0;
+}
+
+.baner-small__description {
+   padding: 40px 0 73px;
+}
+
+.baner-small__title h2 {
+   font-family: var(--Raleway);
+   font-size: 36px;
+   font-weight: 400;
+   line-height: 42px;
+   text-transform: uppercase;
+   position: relative;
+   color: var(--white-color);
+}
+
+.baner-small__title h2::after {
+   content: '';
+   position: absolute;
+   width: 170px;
+   height: 1px;
+   background-color: var(--white-color);
+   bottom: -54px;
+   left: 50%;
+   transform: translate(-50%);
+}
+
+.baner-small__description h5 {
+   font-family: var(--Raleway);
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 22px;
+   color: var(--white-color);
+}
+
+.download-btn .banner-small__btn {
+   width: 370px;
+   height: 58px;
+}
