@@ -1,0 +1,42 @@
+.about__wrapper {
+   padding: 40px 0;
+   margin: 0 auto;
+   width: 85%;
+   position: relative;
+}
+
+.about__box {
+   width: 50%;
+   background: var(--main-color);
+   border-radius: 14px;
+   font-size: 18px;
+   min-height: 300px;
+   padding: 60px 60px 35px;
+   position: relative;
+}
+
+.about__box h2 {
+   font-size: 44px;
+   color: var(--white-color);
+   margin-top: -84px;
+}
+
+.about__box p {
+   font-size: 16px;
+   font-weight: 300;
+   line-height: 1.5;
+   margin-top: 20px;
+   color: var(--white-color);
+}
+
+.about__background {
+   position: absolute;
+   right: -15px;
+   top: -15px;
+   z-index: -1;
+   opacity: .85;
+}
+
+.about__background img {
+   width: 700px;
+}

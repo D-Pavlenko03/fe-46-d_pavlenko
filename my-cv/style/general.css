@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+}
+
+*::after,
+*::before {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: var(--secondary-color);
+}
+
+html {
+    height: 100%;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+/* h1 {
+    text-transform: uppercase;
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--white-color);
+}
+
+h3 {
+    font-size: 45px;
+    font-weight: 400;
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: 200;
+    color: var(--white-color);
+}
+
+p {
+    font-size: 22px;
+    color: var(--white-color);
+}
+
+span {
+    font-weight: 300;
+    font-size: 16px;
+    color: var(--white-color);
+} */
+
+
+.btnDonwload {
+    position: relative;
+    display: inline-block;
+    padding: 14px 40px;
+    color: var(--accent-color);
+    max-width: 250px;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    transition: all .3s ease-in-out;
+}
+
+.btnDonwload:hover {
+    background: var(--accent-color);
+    color: var(--white-color);
+    border-radius: 5px;
+    box-shadow: 0 0 5px var(--accent-color),
+        0 0 10px var(--accent-color),
+        0 0 30px var(--accent-color),
+        0 0 60px var(--accent-color);
+}
+
+.btnDonwload span {
+    position: absolute;
+    display: block;
+    transition: all .3s ease-in-out;
+}
+
+.btnDonwload span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent-color));
+    animation: btn-anim1 1s linear infinite;
+    transition: all .3s ease-in-out;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.btnDonwload span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, var(--accent-color));
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s;
+    transition: all .3s ease-in-out;
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.btnDonwload span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, var(--accent-color));
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s;
+    transition: all .3s ease-in-out;
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.btnDonwload span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, var(--accent-color));
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s;
+    transition: all .3s ease-in-out;
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 40px;
+    }
+}

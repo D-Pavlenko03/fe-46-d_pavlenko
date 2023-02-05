@@ -1,0 +1,45 @@
+.hero {
+   background: var(--main-color);
+}
+
+.hero__left-column {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.hero__wrapper {
+   display: flex;
+   justify-content: space-between;
+}
+
+.hero__title h1 {
+   text-transform: uppercase;
+   font-size: 65px;
+   font-weight: 800;
+   line-height: 1.1;
+   letter-spacing: 0.9px;
+   color: var(--white-color);
+}
+
+.hero__subtitle h3 {
+   font-size: 26px;
+   font-weight: 500;
+   letter-spacing: 0.9px;
+   color: var(--white-color);
+   line-height: 0.2;
+}
+
+.hero__description p {
+   font-size: 16px;
+   font-weight: 400;
+   letter-spacing: 0.9px;
+   color: var(--white-color);
+   line-height: 0.01;
+}
+
+.hero__img-wrapper img {
+   max-width: 635px;
+   width: 100%;
+   margin-bottom: -4px;
+}
