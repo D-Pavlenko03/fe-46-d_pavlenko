@@ -50,8 +50,6 @@
 .contacts-form__box {
    display: flex;
    justify-content: space-between;
-   /* align-items: center;
-   justify-content: center; */
 }
 
 .contacts-form__info,
@@ -99,7 +97,6 @@
    display: flex;
    justify-content: center;
 }
-
 
 .button__contacts {
    width: 370px;
