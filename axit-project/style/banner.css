@@ -26,7 +26,6 @@
 }
 
 .banner__title h1 {
-   font-family: var(--Raleway);
    font-weight: 500;
    font-size: 48px;
    line-height: 56px;
@@ -43,7 +42,6 @@
 
 .banner__description h5 {
    padding: 42px 0;
-   font-family: var(--Raleway);
    font-weight: 400;
    font-size: 18px;
    line-height: 21px;
