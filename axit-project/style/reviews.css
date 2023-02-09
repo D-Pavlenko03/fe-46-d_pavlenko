@@ -15,7 +15,6 @@
 }
 
 .reviews__title h2 {
-   font-family: var(--Raleway);
    font-size: 36px;
    font-weight: 400;
    line-height: 42.26px;
@@ -35,7 +34,6 @@
 }
 
 .reviews__description h5 {
-   font-family: var(--Raleway);
    font-size: 18px;
    font-weight: 400;
    line-height: 21.13px;
@@ -70,13 +68,12 @@
 	height: 0;
 	border-left: 15px solid transparent;
 	border-right: 15px solid transparent;
-	border-top: 20px solid #E2E2E2;;
+	border-top: 20px solid #E2E2E2;
    bottom: -19px;
    left: 72px;
 }
 
 .review__comment h5 {
-   font-family: var(--Raleway);
    font-weight: 400;
    font-size: 18px;
    line-height: 21px;
@@ -84,7 +81,7 @@
    color: var(--text-light);
 }
 
-.review__botom {
+.review__bottom {
    display: flex;
 }
 
@@ -115,7 +112,6 @@
 }
 
 .review__job h5 {
-   font-family: var(--Raleway);
    font-weight: 400;
    font-size: 18px;
    line-height: 21px;
