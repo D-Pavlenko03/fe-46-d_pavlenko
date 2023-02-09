@@ -1,0 +1,125 @@
+.reviews__header {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   text-align: center;
+}
+
+.reviews__title {
+   padding: 104px 0 54px;
+}
+
+.reviews__description {
+   padding: 40px 0;
+}
+
+.reviews__title h2 {
+   font-family: var(--Raleway);
+   font-size: 36px;
+   font-weight: 400;
+   line-height: 42.26px;
+   text-transform: uppercase;
+   position: relative;
+}
+
+.reviews__title h2::after {
+   content: '';
+   position: absolute;
+   width: 170px;
+   height: 1px;
+   background-color: var(--accent-color);
+   bottom: -54px;
+   left: 50%;
+   transform: translate(-50%);
+}
+
+.reviews__description h5 {
+   font-family: var(--Raleway);
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 21.13px;
+   color: var(--text-light);
+}
+
+.reviews__cards {
+   display: flex;
+   padding: 30px 0 64px 0;
+   justify-content: space-between;
+   text-align: center;
+}
+
+.reviews__cards {
+   padding-top: 43px;
+}
+
+.review__comment {
+   max-width: 370px;
+   width: 100%;
+   background: #E2E2E2;
+   border-radius: 10px;
+   padding: 38px 25px 37px;
+   position: relative;
+   margin-bottom: 66px;
+}
+
+.review__comment::after{
+   content: '';
+   position: absolute;
+   width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 20px solid #E2E2E2;;
+   bottom: -19px;
+   left: 72px;
+}
+
+.review__comment h5 {
+   font-family: var(--Raleway);
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 21px;
+   text-align: center;
+   color: var(--text-light);
+}
+
+.review__botom {
+   display: flex;
+}
+
+.review__image-wrapper {
+   max-width: 70px;
+   width: 100%;
+}
+
+.review__image-wrapper img {
+   border-radius: 50%;
+   object-fit: cover;
+}
+
+.review__info {
+   display: flex;
+   flex-direction: column;
+   margin-left: 30px;
+}
+
+.review__name h4 {
+   font-family: var(--Open-Sans);
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 33px;
+   text-transform: capitalize;
+   color: var(--black-color);
+   padding: 11px 0;
+}
+
+.review__job h5 {
+   font-family: var(--Raleway);
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 21px;
+   color: var(--black-color);
+   text-align: left;
+   padding-top: 14px;
+}
