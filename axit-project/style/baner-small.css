@@ -52,3 +52,62 @@
    width: 370px;
    height: 58px;
 }
+
+@media screen and (max-width: 1024px) {
+   .baner-small__wrapper {
+      padding: 50px 16px;
+   }
+
+   .baner-small__title {
+      padding: 46px 0;
+   }
+
+   .baner-small__title h2 {
+      font-size: 24px;
+      line-height: 28px;
+   }
+
+   .baner-small__title h2::after {
+      width: 142px;
+      bottom: -47px;
+   }
+
+   .baner-small__description {
+      padding: 33px 0 32px;
+   }
+
+   .baner-small__description h5 {
+      font-size: 14px;
+      line-height: 16px;
+   }
+
+   .download-btn .banner-small__btn {
+      width: 318px;
+   }
+}
+
+@media screen and (max-width: 700px) {
+   .baner-small__title {
+      padding: 24px 0 46px;
+   }
+}
+
+@media screen and (max-width: 500px) {
+   .baner-small__wrapper {
+      padding: 0 16px 58px;
+   }
+
+   .baner-small__title {
+      padding: 45px 0 46px;
+   }
+
+   .baner-small__description {
+      padding: 18px 0 32px;
+   }
+
+   .download-btn .banner-small__btn {
+      width: 287px;
+      height: 50px;
+      margin-top: 33px;
+   }
+}

@@ -12,11 +12,11 @@
 }
 
 .pricing__title {
-   padding: 54px 0;
+   padding: 46px 0;
 }
 
 .pricing__description {
-   padding: 40px 0;
+   padding: 47px 0 40px;
 }
 
 .pricing__title h2 {
@@ -112,4 +112,130 @@
 
 .price-list li h5:not(last-child) {
    border: 1px solid #F5F5F5;
+}
+
+@media screen and (max-width: 1024px) {
+   .pricing__wrapper {
+      padding: 0 16px;
+   }
+
+   .pricing__title {
+      padding: 39px 0;
+   }
+
+   .pricing__title h2 {
+      font-size: 24px;
+      line-height: 28px;
+   }
+
+   .pricing__title h2::after {
+      width: 143px;
+      bottom: -45px;
+   }
+
+   .pricing__description {
+      padding: 40px 0 12px;
+   }
+
+   .pricing__title h2::after {
+      width: 134px;
+   }
+
+   .pricing__description h5 {
+      font-size: 14px;
+      line-height: 16px;
+   }
+
+   .price__wrapper {
+      max-width: 318px;
+   }
+
+   .price-list h4 {
+      height: 53px;
+      padding: 6.5px;
+   }
+
+   .price-list h3 {
+      padding: 22.5px;
+   }
+
+   .price-list h5 {
+      padding: 11px 17px 10px;
+   }
+
+   .price-list li h5 {
+      padding: 12px 17px 9px;
+   }
+}
+
+@media screen and (max-width: 700px) {
+   .pricing__prices {
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 40px;
+   }
+
+   .price__wrapper {
+      max-width: 375px;
+      margin-bottom: 27px;
+   }
+
+   .price__wrapper.price__wrapper_active {
+      margin-top: 20px;
+      box-shadow: none;
+   }
+}
+
+@media screen and (max-width: 500px) {
+   .pricing__header {
+      padding-top: 6px;
+   }
+
+   .pricing__title {
+      padding: 40px 0;
+   }
+
+   .pricing__description {
+      padding: 31px 0 5px;
+   }
+
+   .pricing__prices {
+      padding: 5px 0 36px;
+   }
+
+   .price__wrapper {
+      margin-top: 12px;
+      margin-bottom: 10px;
+   }
+
+   .price__wrapper:nth-child(3) {
+      margin-top: 37px;
+   }
+
+   .price__wrapper.price__wrapper_active {
+      margin-top: 37px;
+   }
+   
+   .price-list h4 {
+      height: 47px;
+      padding: 10px;
+      font-size: 18px;
+      line-height: 25px;
+   }
+
+   .price-list h3 {
+      font-size: 24px;
+      line-height: 28px;
+      padding: 24px;
+   }
+
+   .price-list h5 {
+      font-size: 14px;
+      line-height: 16px;
+   }
+
+   .price-list li h5 {
+      font-size: 14px;
+      line-height: 16px;
+   }
 }
