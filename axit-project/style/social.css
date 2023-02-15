@@ -1,0 +1,133 @@
+.social {
+   background: #F8EFEF;   
+}
+
+.social__wrapper {
+   padding-bottom: 18px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.social__title {
+   padding: 14px 0;
+   margin-bottom: 18px;
+}
+
+.social__title h4 {
+   font-family: var(--Open-Sans);
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 33px;
+   text-transform: capitalize;
+   color: #333333;
+}
+
+.social__description h5 {
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 21px;
+   color: var(--text-light);
+   max-width: 470px;
+}
+
+.social__socials {
+   display: flex;
+   justify-content: space-between;
+}
+
+.social__socials a {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 70px;
+   height: 70px;
+   margin-top: 15px;
+   margin-left: 30px;
+   text-decoration: none;
+   cursor: pointer;
+   transition: all .5s;
+}
+
+.social__socials a:hover {
+   transform: scale(1.1);
+}
+
+@media screen and (max-width: 1024px) {
+   .social__wrapper {
+      padding: 0 16px 13px;
+   }
+
+   .social__title {
+      padding: 12px 0;
+      margin-bottom: 13px;
+   }
+
+   .social__title h4 {
+      font-size: 18px;
+      line-height: 25px;
+   }
+
+   .social__description h5 {
+      font-size: 14px;
+      line-height: 16px;
+   }
+
+   .social__socials a {
+      width: 64px;
+      height: 64px;
+      margin-top: 24px;
+      margin-left: 20px;
+   }
+}
+
+@media screen and (max-width: 850px) {
+   .social__wrapper {
+      flex-direction: column;
+   }
+}
+
+@media screen and (max-width: 600px) {
+   .social__socials a {
+      width: 40px;
+      height: 40px;
+      margin-left: 0;
+   }
+
+   .social__socials a:not(:first-child) {
+      margin-left: 17px;
+   }
+}
+
+@media screen and (max-width: 500px) {
+   .social__wrapper {
+      padding: 29px 0 41px;
+   }
+
+   .social__title {
+      padding: 12px 1px 7px;
+      margin-bottom: 0;
+   }
+
+   .social__title h4 {
+      text-align: center;
+   }
+
+   .social__description h5 {
+      text-align: center;
+      white-space: pre-line;
+      min-width: 271px;
+      padding-left: 17px;
+   }
+
+   .social__socials a {
+      width: 26px;
+      height: 26px;
+      margin-top: 31px;
+      margin-left: 0;
+   }
+
+   .social__socials a:not(:first-child) {
+      margin-left: 17px;
+   }
+}

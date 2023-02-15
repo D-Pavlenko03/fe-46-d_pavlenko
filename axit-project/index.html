@@ -7,8 +7,8 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link type="Image/x-icon" href="./img/favicon.jpg" rel="icon">
    <title>AXIT</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
    <link rel="stylesheet" href="./style/style.css">
-   <script src="https://kit.fontawesome.com/e65b4061d1.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -51,12 +51,15 @@
          </nav>
       </header>
 
-      <!-- <section class="banner">
+      <section class="banner">
          <div class="container">
             <div class="banner__wrapper">
                <div class="banner__content">
                   <div class="content__logo">
-                     <img src="./img/banner/logo.png" alt="AXIT">
+                     <picture>
+                        <source media="(max-width:1024px)" srcset="./img/banner/logo-tb.png">
+                        <img src="./img/banner/logo.png" alt="AXIT">
+                     </picture>
                   </div>
                   <div class="banner__title">
                      <h1>MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
@@ -86,332 +89,480 @@
                </div>
             </div>
          </div>
-      </section> -->
+      </section>
 
-      <!-- <section class="tabs" id="features">
+      <section class="social">
+         <div class="container">
+            <div class="social__wrapper">
+               <div class="social__info">
+                  <div class="social__title">
+                     <h4>Social Media</h4>
+                  </div>
+                  <div class="social__description">
+                     <h5>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Aenean euismod bibendum laoreet.
+                     </h5>
+                  </div>
+               </div>
+
+               <div class="social__socials">
+                  <a href="#">
+                     <picture>
+                        <source media="(max-width:600px)" srcset="./img/social/facebook-mb.svg">
+                        <source media="(max-width:1024px)" srcset="./img/social/facebook-tb.svg">
+                        <img src="./img/social/facebook.svg" alt="facebook">
+                     </picture>
+                  </a>
+                  <a href="#">
+                     <picture>
+                        <source media="(max-width:600px)" srcset="./img/social/twitter-mb.svg">
+                        <source media="(max-width:1024px)" srcset="./img/social/twitter-tb.svg">
+                        <img src="./img/social/twitter.svg" alt="twitter">
+                     </picture>
+                  </a>
+                  <a href="#">
+                     <picture>
+                        <source media="(max-width:600px)" srcset="./img/social/linkedin-mb.svg">
+                        <source media="(max-width:1024px)" srcset="./img/social/linkedin-tb.svg">
+                        <img src="./img/social/linkedin.svg" alt="linkedin">
+                     </picture>
+                  </a>
+                  <a href="#">
+                     <picture>
+                        <source media="(max-width:600px)" srcset="./img/social/pinterest-mb.svg">
+                        <source media="(max-width:1024px)" srcset="./img/social/pinterest-tb.svg">
+                        <img src="./img/social/pinterest.svg" alt="pinterest">
+                     </picture>
+                  </a>
+                  <a href="#">
+                     <picture>
+                        <source media="(max-width:600px)" srcset="./img/social/instagram-mb.svg">
+                        <source media="(max-width:1024px)" srcset="./img/social/instagram-tb.svg">
+                        <img src="./img/social/instagram.svg" alt="instagram">
+                     </picture>
+                  </a>
+                  <a href="#">
+                     <picture>
+                        <source media="(max-width:600px)" srcset="./img/social/github-mb.svg">
+                        <source media="(max-width:1024px)" srcset="./img/social/github-tb.svg">
+                        <img src="./img/social/github.svg" alt="github">
+                     </picture>
+                  </a>
+                  <a href="#">
+                     <picture>
+                        <source media="(max-width:600px)" srcset="./img/social/rss-mb.svg">
+                        <source media="(max-width:1024px)" srcset="./img/social/rss-tb.svg">
+                        <img src="./img/social/rss.svg" alt="rss">
+                     </picture>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="tabs" id="features">
          <div class="container">
             <div class="tabs__wrapper">
                <div class="tabs__nav">
                   <button class="tabs__nav-item tabs__nav-item_active">tab 1</button>
-                  <button>tab 2</button>
-                  <button>tab 3</button>
+                  <button class="tabs__nav-item">tab 2</button>
+                  <button class="tabs__nav-item">tab 3</button>
                </div>
 
                <div class="tabs__main">
-                  <div class="tab">
-                     <div class="tab__content tab__content_active">
-                        <div class="tab__box">
-                           <div class="tab__title">
-                              <h3>Tabs with soft transitioning effect.</h3>
-                           </div>
-
-                           <div class="tab__description">
-                              <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-                                 bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
-                                 justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
-                                 penatibus et magnis dis parturient montes.
-
-                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-                                 bibendum laoreet.
-                              </h5>
-                           </div>
-
-                           <div class="button">
-                              <button class="button__tab">Download</button>
-                           </div>
+                  <div class="tab__content tab__content_active">
+                     <div class="tab__box">
+                        <div class="tab__title">
+                           <h3>Tabs with soft transitioning effect.</h3>
                         </div>
 
-                        <div class="tab__image">
-                           <div class="tab__image-wrapper">
+                        <div class="tab__description">
+                           <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                              bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                              justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                              penatibus et magnis dis parturient montes.
+
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                              bibendum laoreet.
+                           </h5>
+                        </div>
+
+                        <div class="button">
+                           <button class="button__tab">Download</button>
+                        </div>
+                     </div>
+
+                     <div class="tab__image">
+                        <div class="tab__image-wrapper">
+                           <picture>
+                              <source media="(max-width:1024px)" srcset="./img/tabs/tab-1-tb.jpg">
                               <img src="./img/tabs/tab-1.jpg" alt="NewYork">
+                           </picture>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="tab__content">
+                     <div class="tab__box">
+                        <div class="tab__title">
+                           <h3>Content 2</h3>
+                        </div>
+
+                        <div class="tab__description">
+                           <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                              bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                              justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                              penatibus et magnis dis parturient montes.
+
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                              bibendum laoreet.
+                           </h5>
+                        </div>
+
+                        <div class="button">
+                           <button class="button__tab">Download</button>
+                        </div>
+                     </div>
+
+                     <div class="tab__image">
+                        <div class="tab__image-wrapper">
+                           <picture>
+                              <source media="(max-width:1024px)" srcset="./img/tabs/tab-1-tb.jpg">
+                              <img src="./img/tabs/tab-1.jpg" alt="NewYork">
+                           </picture>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="tab__content">
+                     <div class="tab__box">
+                        <div class="tab__title">
+                           <h3>Content 3</h3>
+                        </div>
+
+                        <div class="tab__description">
+                           <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                              bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                              justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                              penatibus et magnis dis parturient montes.
+
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                              bibendum laoreet.
+                           </h5>
+                        </div>
+
+                        <div class="button">
+                           <button class="button__tab">Download</button>
+                        </div>
+                     </div>
+
+                     <div class="tab__image">
+                        <div class="tab__image-wrapper">
+                           <picture>
+                              <source media="(max-width:1024px)" srcset="./img/tabs/tab-1-tb.jpg">
+                              <img src="./img/tabs/tab-1.jpg" alt="NewYork">
+                           </picture>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="about" id="about">
+         <div class="container">
+            <div class="about__wrapper">
+               <div class="about__header">
+                  <div class="about__title">
+                     <h2>WHY THIS IS AWESOME</h2>
+                  </div>
+                  <div class="about__description">
+                     <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+                  </div>
+               </div>
+
+               <div class="about__cards">
+                  <div class="card">
+                     <div class="card__image">
+                        <div class="card__image-wrapper">
+                           <picture>
+                              <source media="(max-width:1024px)" srcset="./img/about/about1-tb.svg">
+                              <img src="./img/about/about1.png" alt="Thoughtful Design">
+                           </picture>
+                        </div>
+                     </div>
+                     <div class="card__body">
+                        <div class="card__title">
+                           <h4>Thoughtful Design</h4>
+                        </div>
+                        <div class="card__description">
+                           <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                              Proin gravida dolor sit amet lacus accumsan et viverra.</h5>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="card">
+                     <div class="card__image">
+                        <div class="card__image-wrapper">
+                           <picture>
+                              <source media="(max-width:1024px)" srcset="./img/about/about2-tb.svg">
+                              <img src="./img/about/about2.png" alt="Thoughtful Design">
+                           </picture>
+                        </div>
+                     </div>
+                     <div class="card__body">
+                        <div class="card__title">
+                           <h4>Design</h4>
+                        </div>
+                        <div class="card__description">
+                           <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                              Proin gravida dolor sit amet lacus accumsan et viverra.</h5>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="card">
+                     <div class="card__image">
+                        <div class="card__image-wrapper">
+                           <picture>
+                              <source media="(max-width:1024px)" srcset="./img/about/about3-tb.svg">
+                              <img src="./img/about/about3.png" alt="Thoughtful Design">
+                           </picture>
+                        </div>
+                     </div>
+                     <div class="card__body">
+                        <div class="card__title">
+                           <h4>Thoughtful Design</h4>
+                        </div>
+                        <div class="card__description">
+                           <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                              Proin gravida dolor sit amet lacus accumsan et viverra.</h5>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="pricing" id="pricing">
+         <div class="container">
+            <div class="pricing__wrapper">
+               <div class="pricing__header">
+                  <div class="pricing__title">
+                     <h2>pricing options</h2>
+                  </div>
+                  <div class="pricing__description">
+                     <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+                  </div>
+               </div>
+
+               <div class="pricing__prices">
+                  <div class="price__wrapper">
+                     <div class="price-list">
+                        <h4>Basic</h4>
+                        <h3>$10</h3>
+                        <h5>Free for life</h5>
+                        <ul>
+                           <li>
+                              <h5>1 gb of space</h5>
+                           </li>
+                           <li>
+                              <h5>1 gb of space</h5>
+                           </li>
+                           <li>
+                              <h5>1 gb of space</h5>
+                           </li>
+                           <li>
+                              <h5>1 gb of space</h5>
+                           </li>
+                           <li>
+                              <h5>1 gb of space</h5>
+                           </li>
+                           <li>
+                              <h5>1 gb of space</h5>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+
+                  <div class="price__wrapper price__wrapper_active">
+                     <div class="price-list">
+                        <h4>Optima</h4>
+                        <h3>$20</h3>
+                        <h5>Free for life</h5>
+                        <ul>
+                           <li>
+                              <h5>1 gb of space</h5>
+                           </li>
+                           <li>
+                              <h5>1 gb of space</h5>
+                           </li>
+                           <li>
+                              <h5>1 gb of space</h5>
+                           </li>
+                           <li>
+                              <h5>1 gb of space</h5>
+                           </li>
+                           <li>
+                              <h5>1 gb of space</h5>
+                           </li>
+                           <li>
+                              <h5>1 gb of space</h5>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+
+                  <div class="price__wrapper">
+                     <div class="price-list">
+                        <h4>Pro</h4>
+                        <h3>$30</h3>
+                        <h5>Free for life</h5>
+                        <ul>
+                           <li>
+                              <h5>1 gb of space</h5>
+                           </li>
+                           <li>
+                              <h5>1 gb of space</h5>
+                           </li>
+                           <li>
+                              <h5>1 gb of space</h5>
+                           </li>
+                           <li>
+                              <h5>1 gb of space</h5>
+                           </li>
+                           <li>
+                              <h5>1 gb of space</h5>
+                           </li>
+                           <li>
+                              <h5>1 gb of space</h5>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="reviews" id="reviews">
+         <div class="container">
+            <div class="review__wrapper">
+               <div class="reviews__header">
+                  <div class="reviews__title">
+                     <h2>what our customers are saying</h2>
+                  </div>
+                  <div class="reviews__description">
+                     <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+                  </div>
+               </div>
+
+               <div class="reviews__cards">
+                  <div class="swiper reviews-swiper">
+                     <div class="swiper-wrapper">
+                        <div class="review swiper-slide">
+                           <div class="review__header">
+                              <div class="review__comment">
+                                 <h5>
+                                    Lorem ipsum dolor sit amet,
+                                    consectetur adipisicing elit. Doloribus
+                                    accusamus expedita repellat similique
+                                    odio aspernatur ex, architecto eaque
+                                    quo suscipit.
+                                 </h5>
+                              </div>
+                           </div>
+
+                           <div class="review__bottom">
+                              <div class="review__image">
+                                 <div class="review__image-wrapper">
+                                    <img src="./img/reviews/revie1.png" alt="Davis Rhiel Madsen">
+                                 </div>
+                              </div>
+                              <div class="review__info">
+                                 <div class="review__name">
+                                    <h4>Davis Rhiel Madsen</h4>
+                                 </div>
+                                 <div class="review__job">
+                                    <h5>Manager</h5>
+                                 </div>
+                              </div>
                            </div>
                         </div>
-                     </div> -->
 
-      <!-- <div class="tab-content" data-tab-content="tab-2">
-                     Content 2
+                        <div class="review swiper-slide">
+                           <div class="review__header">
+                              <div class="review__comment">
+                                 <h5>
+                                    Lorem ipsum dolor sit amet,
+                                    consectetur adipisicing elit. Doloribus
+                                    accusamus expedita repellat similique
+                                    odio aspernatur ex, architecto eaque
+                                    quo suscipit.
+                                 </h5>
+                              </div>
+                           </div>
+
+                           <div class="review__bottom">
+                              <div class="review__image">
+                                 <div class="review__image-wrapper">
+                                    <img src="./img/reviews/revie2.png" alt="Jaydon Rosser">
+                                 </div>
+                              </div>
+                              <div class="review__info">
+                                 <div class="review__name">
+                                    <h4>Jaydon Rosser</h4>
+                                 </div>
+                                 <div class="review__job">
+                                    <h5>Manager</h5>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="review swiper-slide">
+                           <div class="review__header">
+                              <div class="review__comment">
+                                 <h5>
+                                    Lorem ipsum dolor sit amet,
+                                    consectetur adipisicing elit. Doloribus
+                                    accusamus expedita repellat similique
+                                    odio aspernatur ex, architecto eaque
+                                    quo suscipit.
+                                 </h5>
+                              </div>
+                           </div>
+
+                           <div class="review__bottom">
+                              <div class="review__image">
+                                 <div class="review__image-wrapper">
+                                    <img src="./img/reviews/revie3.png" alt="Cooper Dorwart">
+                                 </div>
+                              </div>
+                              <div class="review__info">
+                                 <div class="review__name">
+                                    <h4>Cooper Dorwart</h4>
+                                 </div>
+                                 <div class="review__job">
+                                    <h5>Manager</h5>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
                      </div>
-
-                     <div class="tab-content" data-tab-content="tab-3">
-                        Content 3
-                     </div> -->
-      <!-- </div>
+                  </div>
                </div>
+
+               <div class="reviews-pagination swiper-pagination"></div>
             </div>
          </div>
-      </section> -->
+      </section>
 
-      <!-- <section class="about" id="about">
-         <div class="container">
-            <div class="about__header">
-               <div class="about__title">
-                  <h2>WHY THIS IS AWESOME</h2>
-               </div>
-               <div class="about__description">
-                  <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-               </div>
-            </div>
-
-            <div class="about__cards">
-               <div class="card">
-                  <div class="card__image">
-                     <div class="card__image-wrapper">
-                        <img src="./img/about/about1.png" alt="Thoughtful Design">
-                     </div>
-                  </div>
-                  <div class="card__body">
-                     <div class="card__title">
-                        <h4>Thoughtful Design</h4>
-                     </div>
-                     <div class="card__description">
-                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
-                           Proin gravida dolor sit amet lacus accumsan et viverra.</h5>
-                     </div>
-                  </div>
-               </div>
-
-               <div class="card">
-                  <div class="card__image">
-                     <div class="card__image-wrapper">
-                        <img src="./img/about/about2.png" alt="Thoughtful Design">
-                     </div>
-                  </div>
-                  <div class="card__body">
-                     <div class="card__title">
-                        <h4>Design</h4>
-                     </div>
-                     <div class="card__description">
-                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
-                           Proin gravida dolor sit amet lacus accumsan et viverra.</h5>
-                     </div>
-                  </div>
-               </div>
-
-               <div class="card">
-                  <div class="card__image">
-                     <div class="card__image-wrapper">
-                        <img src="./img/about/about3.png" alt="Thoughtful Design">
-                     </div>
-                  </div>
-                  <div class="card__body">
-                     <div class="card__title">
-                        <h4>Thoughtful Design</h4>
-                     </div>
-                     <div class="card__description">
-                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
-                           Proin gravida dolor sit amet lacus accumsan et viverra.</h5>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section> -->
-
-      <!-- <section class="pricing" id="pricing">
-         <div class="container">
-            <div class="pricing__header">
-               <div class="pricing__title">
-                  <h2>pricing options</h2>
-               </div>
-               <div class="pricing__description">
-                  <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-               </div>
-            </div>
-
-            <div class="pricing__prices">
-               <div class="price__wrapper">
-                  <div class="price-list">
-                     <h4>Basic</h4>
-                     <h3>$10</h3>
-                     <h5>Free for life</h5>
-                     <ul>
-                        <li>
-                           <h5>1 gb of space</h5>
-                        </li>
-                        <li>
-                           <h5>1 gb of space</h5>
-                        </li>
-                        <li>
-                           <h5>1 gb of space</h5>
-                        </li>
-                        <li>
-                           <h5>1 gb of space</h5>
-                        </li>
-                        <li>
-                           <h5>1 gb of space</h5>
-                        </li>
-                        <li>
-                           <h5>1 gb of space</h5>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-
-               <div class="price__wrapper price__wrapper_active">
-                  <div class="price-list">
-                     <h4>Optima</h4>
-                     <h3>$20</h3>
-                     <h5>Free for life</h5>
-                     <ul>
-                        <li>
-                           <h5>1 gb of space</h5>
-                        </li>
-                        <li>
-                           <h5>1 gb of space</h5>
-                        </li>
-                        <li>
-                           <h5>1 gb of space</h5>
-                        </li>
-                        <li>
-                           <h5>1 gb of space</h5>
-                        </li>
-                        <li>
-                           <h5>1 gb of space</h5>
-                        </li>
-                        <li>
-                           <h5>1 gb of space</h5>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-
-               <div class="price__wrapper">
-                  <div class="price-list">
-                     <h4>Pro</h4>
-                     <h3>$30</h3>
-                     <h5>Free for life</h5>
-                     <ul>
-                        <li>
-                           <h5>1 gb of space</h5>
-                        </li>
-                        <li>
-                           <h5>1 gb of space</h5>
-                        </li>
-                        <li>
-                           <h5>1 gb of space</h5>
-                        </li>
-                        <li>
-                           <h5>1 gb of space</h5>
-                        </li>
-                        <li>
-                           <h5>1 gb of space</h5>
-                        </li>
-                        <li>
-                           <h5>1 gb of space</h5>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section> -->
-
-      <!-- <section class="reviews" id="reviews">
-         <div class="container">
-            <div class="reviews__header">
-               <div class="reviews__title">
-                  <h2>what our customers are saying</h2>
-               </div>
-               <div class="reviews__description">
-                  <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-               </div>
-            </div>
-
-            <div class="reviews__cards">
-               <div class="review">
-                  <div class="review__header">
-                     <div class="review__comment">
-                        <h5>
-                           Lorem ipsum dolor sit amet,
-                           consectetur adipisicing elit. Doloribus
-                           accusamus expedita repellat similique
-                           odio aspernatur ex, architecto eaque
-                           quo suscipit.
-                        </h5>
-                     </div>
-                  </div>
-
-                  <div class="review__bottom">
-                     <div class="review__image">
-                        <div class="review__image-wrapper">
-                           <img src="./img/reviews/revie1.png" alt="Davis Rhiel Madsen">
-                        </div>
-                     </div>
-                     <div class="review__info">
-                        <div class="review__name">
-                           <h4>Davis Rhiel Madsen</h4>
-                        </div>
-                        <div class="review__job">
-                           <h5>Manager</h5>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-
-               <div class="review">
-                  <div class="review__header">
-                     <div class="review__comment">
-                        <h5>
-                           Lorem ipsum dolor sit amet,
-                           consectetur adipisicing elit. Doloribus
-                           accusamus expedita repellat similique
-                           odio aspernatur ex, architecto eaque
-                           quo suscipit.
-                        </h5>
-                     </div>
-                  </div>
-
-                  <div class="review__bottom">
-                     <div class="review__image">
-                        <div class="review__image-wrapper">
-                           <img src="./img/reviews/revie2.png" alt="Jaydon Rosser">
-                        </div>
-                     </div>
-                     <div class="review__info">
-                        <div class="review__name">
-                           <h4>Jaydon Rosser</h4>
-                        </div>
-                        <div class="review__job">
-                           <h5>Manager</h5>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-
-               <div class="review">
-                  <div class="review__header">
-                     <div class="review__comment">
-                        <h5>
-                           Lorem ipsum dolor sit amet,
-                           consectetur adipisicing elit. Doloribus
-                           accusamus expedita repellat similique
-                           odio aspernatur ex, architecto eaque
-                           quo suscipit.
-                        </h5>
-                     </div>
-                  </div>
-
-                  <div class="review__bottom">
-                     <div class="review__image">
-                        <div class="review__image-wrapper">
-                           <img src="./img/reviews/revie3.png" alt="Cooper Dorwart">
-                        </div>
-                     </div>
-                     <div class="review__info">
-                        <div class="review__name">
-                           <h4>Cooper Dorwart</h4>
-                        </div>
-                        <div class="review__job">
-                           <h5>Manager</h5>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section> -->
-
-      <!-- <section class="baner-small">
+      <section class="baner-small">
          <div class="container">
             <div class="baner-small__wrapper">
                <div class="baner-small__title">
@@ -426,52 +577,96 @@
                </div>
             </div>
          </div>
-      </section> -->
+      </section>
 
-      <!-- <section class="contacts" id="contact">
+      <section class="contacts" id="contact">
          <div class="container">
-            <div class="contacts__header">
-               <div class="contacts__title">
-                  <h2>contact us</h2>
-               </div>
-               <div class="contacts__description">
-                  <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-               </div>
-            </div>
-
-            <div class="contacts-form">
-               <form>
-                  <div class="contacts-form__box">
-                     <div class="contacts-form__info">
-                        <input type="text" placeholder="Name">
-                        <input type="email" placeholder="Email">
-                        <input type="password" placeholder="Password">
-                     </div>
-                     <div class="contacts-form__message">
-                        <textarea placeholder="Message"></textarea>
-                     </div>
+            <div class="contacts__wrapper">
+               <div class="contacts__header">
+                  <div class="contacts__title">
+                     <h2>contact us</h2>
                   </div>
-
-                  <div class="button">
-                     <button class="button__contacts" type="submit">Send Message</button>
+                  <div class="contacts__description">
+                     <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
                   </div>
-               </form>
+               </div>
+
+               <div class="contacts-form">
+                  <form>
+                     <div class="contacts-form__box">
+                        <div class="contacts-form__info">
+                           <input type="text" placeholder="Name">
+                           <input type="email" placeholder="Email">
+                           <input type="password" placeholder="Password">
+                        </div>
+                        <div class="contacts-form__message">
+                           <textarea placeholder="Message"></textarea>
+                        </div>
+                     </div>
+
+                     <div class="button">
+                        <button class="button__contacts" type="submit">Send Message</button>
+                     </div>
+                  </form>
+               </div>
             </div>
          </div>
-      </section> -->
+      </section>
 
-      <!-- <footer class="footer">
+      <footer class="footer">
          <div class="container">
             <div class="footer__wrapper">
                <div class="footer__header">
                   <div class="footer__socials">
-                     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                     <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                     <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                     <a href="#"><i class="fa-brands fa-pinterest"></i></a>
-                     <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-                     <a href="#"><i class="fa-brands fa-github"></i></a>
-                     <a href="#"><i class="fa-sharp fa-solid fa-rss"></i></a>
+                     <a href="#">
+                        <picture>
+                           <source media="(max-width:600px)" srcset="./img/footer/facebook-mb.svg">
+                           <source media="(max-width:1024px)" srcset="./img/footer/facebook-tb.svg">
+                           <img src="./img/footer/facebook.svg" alt="facebook">
+                        </picture>
+                     </a>
+                     <a href="#">
+                        <picture>
+                           <source media="(max-width:600px)" srcset="./img/footer/twitter-mb.svg">
+                           <source media="(max-width:1024px)" srcset="./img/footer/twitter-tb.svg">
+                           <img src="./img/footer/twitter.svg" alt="twitter">
+                        </picture>
+                     </a>
+                     <a href="#">
+                        <picture>
+                           <source media="(max-width:600px)" srcset="./img/footer/linkedin-mb.svg">
+                           <source media="(max-width:1024px)" srcset="./img/footer/linkedin-tb.svg">
+                           <img src="./img/footer/linkedin.svg" alt="linkedin">
+                        </picture>
+                     </a>
+                     <a href="#">
+                        <picture>
+                           <source media="(max-width:600px)" srcset="./img/footer/pinterest-mb.svg">
+                           <source media="(max-width:1024px)" srcset="./img/footer/pinterest-tb.svg">
+                           <img src="./img/footer/pinterest.svg" alt="pinterest">
+                        </picture>
+                     </a>
+                     <a href="#">
+                        <picture>
+                           <source media="(max-width:600px)" srcset="./img/footer/instagram-mb.svg">
+                           <source media="(max-width:1024px)" srcset="./img/footer/instagram-tb.svg">
+                           <img src="./img/footer/instagram.svg" alt="instagram">
+                        </picture>
+                     </a>
+                     <a href="#">
+                        <picture>
+                           <source media="(max-width:600px)" srcset="./img/footer/github-mb.svg">
+                           <source media="(max-width:1024px)" srcset="./img/footer/github-tb.svg">
+                           <img src="./img/footer/github.svg" alt="github">
+                        </picture>
+                     </a>
+                     <a href="#">
+                        <picture>
+                           <source media="(max-width:600px)" srcset="./img/footer/rss-mb.svg">
+                           <source media="(max-width:1024px)" srcset="./img/footer/rss-tb.svg">
+                           <img src="./img/footer/rss.svg" alt="rss">
+                        </picture>
+                     </a>
                   </div>
                </div>
 
@@ -482,9 +677,10 @@
                </div>
             </div>
          </div>
-      </footer> -->
+      </footer>
    </main>
 
+   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
    <script src="js/script.js"></script>
 </body>
 

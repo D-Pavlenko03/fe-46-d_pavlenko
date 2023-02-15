@@ -6,7 +6,7 @@
 }
 
 .banner__wrapper {
-   padding: 280px 0 183px;
+   padding: 282px 0 183px;
    display: flex;
    justify-content: space-between;
 }
@@ -32,6 +32,7 @@
    text-transform: uppercase;
    color: var(--white-color);
    margin-bottom: 55px;
+   margin-right: 20px;
 }
 
 .divider {
@@ -136,3 +137,156 @@
    background: var(--accent-color);
    box-shadow: inset 0px 0px 10px #AB4949;
 } 
+
+@media screen and (max-width: 1024px) {
+   .banner__wrapper {
+      padding: 211px 20px 106px 115px;
+      display: flex;
+      justify-content: space-between;
+   }
+
+   .banner__content {
+      justify-content: flex-start;
+   }
+
+   .content__logo img {
+      max-width: 114.5px;
+      max-height: 42px;
+      margin-top: 17px;
+      margin-bottom: 53px;
+   }
+
+   .banner__title h1 {
+      font-size: 36px;
+      line-height: 42px;
+      max-width: 455px;
+      margin-bottom: 40px;
+   }
+
+   .divider {
+      width: 115px;
+   }
+
+   .banner__description h5 {
+      padding: 31px 0;
+      font-size: 14px;
+      line-height: 16px;
+      max-width: 183px;
+   }
+
+   .download-btn .banner__btn {
+      max-width: 183px;
+      height: 50px;
+   }
+
+   .form {
+      max-width: 398px;
+   }
+
+   .form__title {
+      padding: 34px 50px 76px;
+   }
+
+   .form__title h4 {
+      font-size: 18px;
+      line-height: 25px;
+   }
+}
+
+@media screen and (max-width: 992px) {
+   .banner__wrapper {
+      padding: 211px 20px 106px 40px;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .banner__wrapper {
+      display: flex;
+      flex-direction: column;
+      padding: 180px 20px 70px 40px;
+   }
+
+   .banner__content {
+      margin-bottom: 40px;
+   }
+
+   .content__logo {
+      display: none;
+   }
+
+   .banner__title h1 {
+      max-width: 520px;
+   }
+
+   .banner__description h5 {
+      max-width: 520px;
+   }
+
+   .download-btn .banner__btn {
+      max-width: 300px;
+      height: 60px;
+   }
+
+   .form {
+      max-width: 480px;
+      margin: 0 auto;
+   }
+}
+
+@media screen and (max-width: 450px) {
+   .banner__wrapper {
+      display: flex;
+      flex-direction: column;
+      padding: 140px 16px 50px 16px;
+   }
+
+   .banner__title h1 {
+      text-align: center;
+      margin-right: 0;
+      margin-bottom: 42px;
+   }
+
+   .divider {
+      width: 134px;
+      margin: 0 auto;
+   }
+
+   .banner__description h5 {
+      padding: 42px 0;
+      text-align: center;
+      max-width: 500px;
+   }
+
+   .download-btn .banner__btn {
+      max-width: 300px;
+      height: 50px;
+      display: block;
+      margin: 0 auto;
+   }
+
+   .banner__content {
+      margin-bottom: 56px;
+   }
+
+   .form__title {
+      padding: 34px 28px 35px 20px;
+   }
+
+   .form__title h4 {
+      font-size: 14px;
+      line-height: 19px;
+      max-width: 500px;
+   }
+
+   .form .form__wrapper {
+      padding: 0 28px 0 18px;
+   }
+
+   .form input {
+      margin-bottom: 34px;
+   }
+
+   .form button {
+      margin-top: 21px;
+   }
+}

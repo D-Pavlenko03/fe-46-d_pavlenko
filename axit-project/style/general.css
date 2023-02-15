@@ -4,6 +4,8 @@
    padding: 0 15px;
 }
 
+
+
 body {
    background: #FFFFFF;
    font-family: var(--Raleway);
@@ -55,4 +57,10 @@ body.no-scroll {
 .button button:active {
    background: var(--accent-color);
    box-shadow: inset 0px 0px 10px #AB4949;
+}
+
+@media screen and (max-width: 1024px) {
+   .container {
+      padding: 0;
+   }
 }
