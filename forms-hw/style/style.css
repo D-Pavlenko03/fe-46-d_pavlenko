@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap');
+@import "./normalize.css";
+
+.container {
+   max-width: 1365px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+body {
+   background: #EFEFEF;
+   font-family: 'Montserrat', sans-serif;
+}
+
+body.lock {
+   overflow: hidden;
+}
+
+.reviews__wrapper {
+   background: #FBF7F6;
+   padding: 50px;
+   max-width: 1234px;
+   margin: 0 auto;
+}
+
+.reviews__title h3 {
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 30px;
+   letter-spacing: 0.04em;
+   color: #371030;
+   margin-bottom: 25px;
+   max-width: 600px;
+}
+
+.feedback {
+   max-width: 1234px;
+}
+
+.feedback input,
+.feedback textarea {
+   background: #F9F0EE;
+   border-radius: 5px;
+   border: none;
+   outline: none;
+   font-size: 16px;
+   line-height: 30px;
+   letter-spacing: 0.04em;
+   color: #000000;
+   opacity: 0.5;
+   width: calc(100% - 50px);
+   margin-bottom: 30px;
+      width: 100%;
+}
+
+.feedback textarea {
+   padding: 18px 25px;
+   resize: none;
+   min-height: 188px;
+}
+
+.feedback input {
+   padding: 5px 25px;
+}
+
+.feedback input::placeholder,
+.feedback textarea::placeholder {
+   font-size: 16px;
+   line-height: 30px;
+   letter-spacing: 0.04em;
+   color: #000000;
+   opacity: 0.5;
+}
+
+.feedback__data {
+   display: flex;
+   justify-content: space-between;
+   gap: 37px;
+}
+
+.feedback__button button,
+.feedback__button a {
+   cursor: pointer;
+   background: #FFB0BA;
+   box-shadow: 3px 3px 0px 3px #DE8E98;
+   border-radius: 100px;
+   border: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 63px;
+   min-width: 250px;
+   width: 100%;
+   font-weight: 900;
+   font-size: 20px;
+   line-height: 24px;
+   text-align: center;
+   letter-spacing: 0.04em;
+   color: #9A3C48;
+   transition: all .3s ease-in;
+}
+
+.feedback__button button:hover,
+.feedback__button a:hover {
+   background: #FFA88D;
+   box-shadow: 3px 3px 0px 3px #E4B8AB;
+   color: #923F25;
+}
+
+.feedback__button button:active,
+.feedback__button a:active{
+   background: #78D9A8;
+   box-shadow: 3px 3px 0px 3px #73C293;
+   color: #41966B;
+}
+
+.popup__button-password a {
+   text-decoration: none;
+   max-width: 550px;
+   margin: 75px auto;
+}
+
+.feedback__botom {
+   display: flex;
+   justify-content: start;
+   align-items: center;
+}
+
+.feedback__checkbox {
+   position: absolute;
+   z-index: -1;
+   opacity: 0;
+   display: none;
+}
+
+.feedback__check input {
+   width: 26px;
+   height: 23px;
+}
+
+.feedback__checkbox+label {
+   display: flex;
+   align-items: center;
+   user-select: none;
+   padding-left: 30px;
+   cursor: pointer;
+}
+
+.feedback__check {
+   display: flex;
+   align-items: center;
+}
+
+.feedback__checkbox+label::before {
+   content: '';
+   display: block;
+   width: 26px;
+   height: 23px;
+   border: none;
+   background: #F9F0EE;
+   border-radius: 5px;
+   margin-right: 15px;
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 50% 50%;
+}
+
+.feedback__checkbox:checked+label::before {
+   background-image: url('../img/checkbox.png');
+}
+
+.feedback__check label {
+   font-size: 12px;
+   line-height: 30px;
+   letter-spacing: 0.04em;
+   color: #000000;
+   opacity: 0.5;
+}
+
+.popup {
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.8);
+   top: 0;
+   left: 0;
+   opacity: 0;
+   visibility: hidden;
+   overflow-y: auto;
+   overflow-x: hidden;
+   transition: all .8s ease;
+}
+
+.popup.open {
+   opacity: 1;
+   visibility: visible;
+}
+
+.popup.open .popup__content {
+   transform: translate(0px, 0px);
+}
+
+.popup__body {
+   min-height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 40px 10px;
+}
+
+.popup__content {
+   background-color: #FFFFFF;
+   color: #000;
+   max-width: 600px;
+   box-shadow: 0px 0px 30px rgba(68, 68, 68, 0.05);
+   border-radius: 20px;
+   padding: 129px 107px 76px;
+   position: relative;
+   transition: all .8s ease;
+   opacity: 1;
+   transform: translate(0px, -100%);
+}
+
+.popup__close {
+   position: absolute;
+   right: 69px;
+   top: 54px;
+   text-decoration: none;
+}
+
+.popup__title h3 {
+   font-weight: 600;
+   font-size: 28px;
+   line-height: 34px;
+   color: #424242;
+   margin-bottom: 40px;
+}
+
+.popup__password input {
+   width: 100%;
+   border: 1px solid #BDBDBD;
+   border-radius: 83px;
+   padding: 17px 32px;
+   font-size: 14px;
+   line-height: 17px;
+   color: #BDBDBD;
+   margin-bottom: 8px;
+   outline: none;
+}
+
+.popup__password input::placeholder {
+   font-size: 14px;
+   line-height: 17px;
+   color: #BDBDBD;
+}
+
+.popup__password label {
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 15px;
+   color: #424242;
+}
+
+.popup__password {
+   margin-bottom: 40px;
+}
+
+.popup__button  {
+   max-width: 195px;
+   margin: 0 auto;
+}
+
+.popup__button button{
+   background: linear-gradient(102.48deg, #976464 -29.03%, #CFA5A5 97.75%);
+   border-radius: 49px;
+   width: 100%;
+   height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 24px;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   cursor: pointer;
+   border: 1px solid transparent;
+   transition: all .3s ease-in;
+}
+
+.popup__button button:hover {
+   background: linear-gradient(102.48deg, #7B4646 -29.03%, #BF9191 97.75%);
+}
+
+.popup__button button:active {
+   background: transparent;
+   border: 1px solid #976464;
+   background: linear-gradient(102.48deg, #976464 -29.03%, #CFA5A5 97.75%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+   text-fill-color: transparent;
+}
+
+
+@media screen and (max-width: 992px) {
+   .feedback__data {
+      gap: 17px;
+   }
+
+   .feedback__check label span {
+      max-width: 290px;
+      line-height: 21px;
+   }
+}
+
+@media screen and (max-width: 750px) {
+   .feedback__botom {
+      justify-content: center;
+      flex-direction: column-reverse;
+   }
+
+   .feedback__checkbox+label {
+      padding-left: 0;
+   }
+
+   .feedback__check label span {
+      max-width: 400px;
+      line-height: 17px;
+   }
+
+   .feedback__data {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0;
+      margin-bottom: 10px;
+   }
+
+   .feedback__data:last-child {
+      margin-bottom: 20px;
+   }
+
+   .feedback__checkbox+label {
+      margin-bottom: 30px;
+   }
+}
+
+@media screen and (max-width: 650px) {
+   .popup__content {
+      padding: 129px 60px 76px;
+   }
+
+   .popup__button-password a {
+      font-size: 16px;
+      padding: 0 25px;
+   }
+
+   .feedback__check label span {
+      max-width: 300px;
+   }
+}
+
+@media screen and (max-width: 500px) {
+   .reviews__wrapper {
+      padding: 50px 15px;
+   }
+
+   .reviews__title h3 {
+      font-size: 13px;
+      line-height: 16px;
+      margin-bottom: 19px;
+   }
+
+   .feedback input,
+   .feedback textarea {
+      font-size: 10px;
+      margin-bottom: 10px;
+   }
+
+   .feedback textarea {
+      padding: 5px 15px;
+   }
+
+   .feedback input {
+      padding: 5px 15px;
+   }
+
+   .feedback input::placeholder,
+   .feedback textarea::placeholder {
+      font-size: 10px;
+   }
+
+   .feedback__checkbox+label {
+      font-size: 10px;
+      line-height: 12px;
+   }
+   
+   .feedback__check label span {
+      max-width: 200px;
+   }
+
+   .feedback__button button,
+   .feedback__button a {
+      height: 49px;
+      min-width: 180px;
+   }
+
+   .popup__close {
+      right: 30px;
+      top: 30px;
+   }
+
+   .popup__title h3 {
+      font-size: 23px;
+   }
+
+   .popup__content {
+      padding: 100px 30px 35px;
+   }
+
+   .popup__button-password a {
+      font-size: 14px;
+   }
+}
